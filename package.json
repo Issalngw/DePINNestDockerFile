@@ -1,0 +1,14 @@
+{
+  "name": "depinnest-node",
+  "version": "1.0.0",
+  "description": "DePINNest — decentralized infrastructure node demo for hackathon deployment",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Isarck (@SirIsarck)",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
