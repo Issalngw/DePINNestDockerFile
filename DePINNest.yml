@@ -1,0 +1,48 @@
+version: 0.1
+
+services:
+  depinnestnode:
+    # Using official Node.js image from Docker Hub
+    image: "node:20"
+    imagePullPolicy: Always
+
+    env:
+      - name: NODE_ENV
+        value: production
+      - name: APP_NAME
+        value: DePINNest
+      - name: SOLANA_CLUSTER
+        value: mainnet-beta
+      - name: PORT
+        value: "3000"
+
+    ports:
+      - containerPort: 3000
+        protocol: TCP
+        expose: true
+
+    resourceUsage:
+      idle:
+        cpu: 250
+        memory: 512
+
+    # Start command for your app
+    command: ["npm", "start"]
+
+metadata:
+  name: DePINNest Node
+  version: "1.0.0"
+  maintainer: "Isarck (@SirIsarck)"
+  description: "DePINNest — A decentralized EV charging network on Solana that connects IoT-powered charging stations with smart contracts, NFT wallets, and Solana Pay."
+  license: MIT
+  category: Mobility / Energy / Solana / DePIN
+  source: "https://github.com/Issalngw/DePINNest"
+  tutorial: "https://github.com/Issalngw/DePINNest#"
+  tags:
+    - Solana
+    - DePIN
+    - IoT
+    - Energy
+    - EV
+    - Charging
+    - Hackathon
