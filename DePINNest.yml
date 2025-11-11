@@ -2,8 +2,7 @@ version: 0.1
 
 services:
   depinnestnode:
-    # Using official Node.js image from Docker Hub
-    image: "node:20"
+    image: node:20
     imagePullPolicy: Always
 
     env:
@@ -26,18 +25,35 @@ services:
         cpu: 250
         memory: 512
 
-    # Start command for your app
-    command: ["npm", "start"]
+    command:
+      - npm
+      - start
 
 metadata:
   name: DePINNest Node
-  version: "1.0.0"
-  maintainer: "Isarck (@SirIsarck)"
-  description: "DePINNest — A decentralized EV charging network on Solana that connects IoT-powered charging stations with smart contracts, NFT wallets, and Solana Pay."
+  version: 1.0.0
+  maintainer: Isarck (@SirIsarck)
+  description: >-
+    DePINNest, A decentralized EV charging network on Solana connecting
+    IoT-powered charging stations with smart contracts, NFT wallets, and Solana Pay.
+    Each node simulates real-time EV charging data and tokenized ownership.
+
   license: MIT
   category: Mobility / Energy / Solana / DePIN
-  source: "https://github.com/Issalngw/DePINNest"
-  tutorial: "https://github.com/Issalngw/DePINNest#"
+  source: https://github.com/Issalngw/DePINNest
+  tutorial: https://github.com/Issalngw/DePINNest#
+  
+  reward:
+    model: >-
+      Nodes earn DPN tokens based on uptime, charging activity, and verified energy data.
+      Rewards simulate how decentralized EV charging stations can generate
+      on-chain incentives for network participation.
+    distribution: >-
+      Rewards are distributed proportionally based on node performance and
+      verified contributions using Solana smart contract logic.
+    token: DPN (DePINNest Token)
+    frequency: Every 24 hours (simulated)
+
   tags:
     - Solana
     - DePIN
@@ -45,4 +61,5 @@ metadata:
     - Energy
     - EV
     - Charging
+    - Rewards
     - Hackathon
