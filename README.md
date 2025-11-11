@@ -146,3 +146,44 @@ DePIN architecture optimization
 Dashboard UI
 
 
+## Reward Distribution:
+
+DePINNest introduces a community-powered reward system that reflects how decentralized EV charging networks could operate in real life.
+Each node (charging station) is tokenized and earns rewards based on performance, uptime, and verified energy usage.
+
+## How It Works
+
+IoT Integration: Each DePINNest node reports its real-time charging sessions and uptime data to the Solana blockchain.
+
+Smart Contract Validation: The Solana program verifies the data to ensure authenticity and fairness.
+
+Tokenized Rewards: Nodes receive DPN tokens as incentives for maintaining stable operation and serving real users.
+
+On-Chain Distribution: Rewards are automatically sent to each node’s NFT Smart Wallet using Solana Pay microtransactions.
+
+
+## Reward Model (Simulation)
+
+Metric	Description	Reward Weight
+
+Node Uptime	Measures how long the node stays active	40%
+Charging Sessions	Tracks total number of EV sessions processed	35%
+Data Reliability	Accuracy and validity of IoT data	25%
+
+
+Reward Frequency: Every 24 hours (simulated)
+Reward Token: DPN (DePINNest Token)
+Distribution: Managed by Solana smart contracts for transparency and fairness.
+
+## Real-World Vision
+
+In the full-scale version, DPN tokens would represent energy credits or network shares, creating a Charge-to-Earn model where:
+
+Station owners earn from each verified charge.
+
+Communities can crowdfund or host local nodes.
+
+Drivers contribute to decentralized clean mobility.
+
+
+** In essence: DePINNest rewards those who power the network, literally and digitally.
